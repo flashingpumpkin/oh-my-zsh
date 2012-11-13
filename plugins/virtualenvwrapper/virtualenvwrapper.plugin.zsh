@@ -33,7 +33,7 @@ for wrapsource in "/usr/bin/virtualenvwrapper.sh" "/usr/local/bin/virtualenvwrap
 
       # New cd function that does the virtualenv magic
       function cd {
-          builtin cd "$@" && workon_cwd
+          builtin cd "$@" && workon_cwd && ls
       }
     fi
 
